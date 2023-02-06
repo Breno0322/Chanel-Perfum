@@ -1,0 +1,80 @@
+body {
+    margin: 100px;
+    background: beige;
+}
+
+p {
+    font-family: "Montserrat";
+    font-size: 14px;
+    color: rgb(126, 123, 123);
+}
+
+.img-perfume {
+    display: block;
+    max-width: 720px;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+}
+
+.descriçao-perfume {
+    font-size: 30px;
+    font-family: "Fraunces";
+}
+
+.conteudo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 1440px;
+}
+
+.perfume {
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+.marca {
+    text-transform: uppercase;
+}
+
+.descriçao {
+    background: #ffffff;
+    padding: 30px;
+    max-width: 720px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+.valores {
+    display: flex;
+    align-items: center;
+}
+
+.preço {
+    font-size: 30px;
+    color: green;
+    font-family: "Fraunces";
+}
+
+.preço2 {
+    margin: 30px;
+    text-decoration: line-through;
+}
+
+.botao {
+    font-family: "Montserrat";
+    text-decoration: none;
+    background: green;
+    padding: 10px 40px;
+    border-radius: 4px;
+    color: #ffffff;
+    text-align: center;
+    display: block;
+}
+
+.botao3 {
+    padding-right: 15px;
+}
