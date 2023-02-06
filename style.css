@@ -1,6 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-    margin: 100px;
-    background: beige;
+    padding: 100px;
+    background: hsl(30, 38%, 92%);
+    display: flex; /* Quebra linha */
+    align-items: center; /* alinha ao centro verticalmente */
+    justify-content: center; /* alinha ao centro horizontalmente */
 }
 
 p {
@@ -9,11 +18,53 @@ p {
     color: rgb(126, 123, 123);
 }
 
+a {
+    font-family: "Montserrat";
+    text-decoration: none;
+    background-color: hsl(158, 36%, 37%);
+    color: #fff;
+    padding: 10px 40px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* usar apenas quando tiver display: flex **/
+}
+
+a:hover {
+    background-color: hsl(158, 36%, 20%);
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.conteudo {
+    display: flex;
+    max-width: 1440px;
+    width: 100%;
+}
+
+.img-perfume,
+.descriçao {
+    width: 50%;
+}
+
 .img-perfume {
     display: block;
-    max-width: 720px;
     border-top-left-radius: 6px;
     border-bottom-left-radius: 6px;
+}
+
+.descriçao {
+    background: #fff;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    gap: 20px;
 }
 
 .descriçao-perfume {
@@ -21,60 +72,29 @@ p {
     font-family: "Fraunces";
 }
 
-.conteudo {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    max-width: 1440px;
+.texto {
+    line-height: 24px;
 }
 
 .perfume {
-    font-size: 15px;
-    text-transform: uppercase;
     letter-spacing: 4px;
-}
-
-.marca {
-    text-transform: uppercase;
-}
-
-.descriçao {
-    background: #ffffff;
-    padding: 30px;
-    max-width: 720px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    border-top-right-radius: 6px;
-    border-bottom-right-radius: 6px;
 }
 
 .valores {
     display: flex;
     align-items: center;
+    gap: 20px;
 }
 
 .preço {
     font-size: 30px;
-    color: green;
+    color: hsl(158, 36%, 37%);
     font-family: "Fraunces";
 }
 
 .preço2 {
-    margin: 30px;
     text-decoration: line-through;
 }
 
-.botao {
-    font-family: "Montserrat";
-    text-decoration: none;
-    background: green;
-    padding: 10px 40px;
-    border-radius: 4px;
-    color: #ffffff;
-    text-align: center;
-    display: block;
-}
 
-.botao3 {
-    padding-right: 15px;
-}
+/* Responsive layout */
