@@ -52,8 +52,8 @@ a:hover {
 
 .img-perfume {
     display: block;
-    border-top-left-radius: 6px;
-    border-bottom-left-radius: 6px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
 }
 
 .descriçao {
@@ -62,8 +62,8 @@ a:hover {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    border-top-right-radius: 6px;
-    border-bottom-right-radius: 6px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
     gap: 20px;
 }
 
@@ -98,3 +98,41 @@ a:hover {
 
 
 /* Responsive layout */
+
+@media (max-width: 600px) {
+    .perfume {
+        font-size: 12px;
+    }
+    
+    .conteudo {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .img-perfume,
+    .descriçao {
+        width: 100%;
+    }
+
+    .img-perfume {
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        border-bottom-left-radius: 0px;
+        height: 250px;
+        object-fit: cover;
+    }
+
+    .descriçao {
+        padding: 20px;
+        gap: 10px;
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+    }
+
+    a {
+        border-radius: 8px;
+        font-size: 12px;
+        padding: 13px 20px;
+    }
+}
